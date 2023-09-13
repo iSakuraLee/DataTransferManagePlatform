@@ -1,0 +1,24 @@
+server:
+  port: 10000
+
+spring:
+  application:
+    name: dtmp-manage
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dtmp_dev?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    name: root
+    password: LY123123
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 49.232.20.165:8848
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto

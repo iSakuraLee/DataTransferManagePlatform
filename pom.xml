@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.onlee.dtmp</groupId>
+    <artifactId>DataTransferManagePlatform</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>dtmp</name>
+    <description>dtmp-parent</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>dtmp-common</module>
+        <module>dtmp-batch</module>
+        <module>dtmp-agent</module>
+        <module>dtmp-manage</module>
+        <module>dtmp-streaming</module>
+        <module>dtmp-gateway</module>
+        <module>dtmp-thirdparty</module>
+    </modules>
+</project>
