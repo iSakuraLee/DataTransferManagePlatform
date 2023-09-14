@@ -1,0 +1,6 @@
+server:
+  port: 100000
+
+spring:
+  application:
+    name: dtmp-gateway
