@@ -22,7 +22,7 @@ public class StreamingDataManageController {
         BaseInfoUtil baseInfoUtil = BaseInfoUtil.getInstance();
         String hostIp = baseInfoUtil.getHostIp();
 
-        logger.info("当前服务器信息：" + "节点IP=" + hostIp + "; 系统时间=" + currentDate);
+        logger.info("当前服务器信息：" + "节点信息==>" + hostIp + "; 系统时间==>" + currentDate);
     }
 
 }
