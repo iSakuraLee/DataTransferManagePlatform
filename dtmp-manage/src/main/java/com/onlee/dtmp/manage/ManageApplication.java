@@ -9,6 +9,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class ManageApplication {
 
     public static void main(String[] args) {
+        // 密钥
+        System.setProperty("jasypt.encryptor.password", "End2Start");
         SpringApplication.run(ManageApplication.class, args);
     }
 
