@@ -8,5 +8,7 @@
 
     </resultMap>
 
-
+    <select id="queryAllPublishSystem" resultMap="pubSysMap">
+        select * from dtmp_batch_publish_system where 1=1
+    </select>
 </mapper>
