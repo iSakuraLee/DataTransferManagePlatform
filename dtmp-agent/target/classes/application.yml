@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/dtmp_dev?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
-    password: LY123123
+    password: onlee(GuZRkCN15S5s8WOF74SY2C4G4KqkZfi2zSTm9nJ9wqs=)
 
   cloud:
     nacos:
@@ -18,3 +18,11 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+# 加密配置
+jasypt:
+  encryptor:
+    algorithm: "PBEWithMD5AndDES"
+    property:
+      prefix: "onlee("
+      suffix: ")"
