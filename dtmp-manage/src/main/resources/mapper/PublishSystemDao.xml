@@ -12,10 +12,14 @@
         select * from dtmp_batch_publish_system where 1=1
     </select>
     <select id="queryPublishSystemByName" resultMap="pubSysMap">
-        select * from dtmp_batch_publish_system where systemName = #{name}
+        select * from dtmp_batch_publish_system where systemName = #{systemName}
     </select>
     <select id="getPublishSystemById" resultType="com.onlee.dtmp.manage.entity.PublishSystemEntity">
         select * from tmp_batch_publish_system where id = #{id}
     </select>
+    <select id="queryPublishSystemByNameCn" resultMap="pubSysMap">
+        select * from dtmp_batch_publish_system where systemNameCn = #{systemNameCn}
+    </select>
+
 
 </mapper>
