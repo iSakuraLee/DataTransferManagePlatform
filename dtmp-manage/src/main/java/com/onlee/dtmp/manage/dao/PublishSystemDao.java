@@ -11,4 +11,8 @@ public interface PublishSystemDao extends BaseMapper<PublishSystemEntity> {
 
     List<PublishSystemEntity> queryAllPublishSystem();
 
+    List<PublishSystemEntity> queryPublishSystemByName(String name);
+
+    PublishSystemEntity getPublishSystemById(int id);
+
 }

@@ -11,4 +11,11 @@
     <select id="queryAllPublishSystem" resultMap="pubSysMap">
         select * from dtmp_batch_publish_system where 1=1
     </select>
+    <select id="queryPublishSystemByName" resultMap="pubSysMap">
+        select * from dtmp_batch_publish_system where systemName = #{name}
+    </select>
+    <select id="getPublishSystemById" resultType="com.onlee.dtmp.manage.entity.PublishSystemEntity">
+        select * from tmp_batch_publish_system where id = #{id}
+    </select>
+
 </mapper>
