@@ -35,7 +35,7 @@ public class DateUtil {
      * @return 指定格式的日期时间
      */
     public String getCurrentDateByFormat(String format) {
-        if (format == null || "".equals(format)) {
+        if (format == null || format.isEmpty()) {
             return getCurrentDate();
         } else {
             if (!Arrays.asList(DATE_FORMAT).contains(format)) {
@@ -45,6 +45,10 @@ public class DateUtil {
                 return new SimpleDateFormat(format).format(new Date());
             }
         }
+    }
+
+    public long trans2TimeStamp(Date date) {
+        return date.getTime();
     }
 
 }
