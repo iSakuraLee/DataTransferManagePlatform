@@ -51,4 +51,8 @@ public class DateUtil {
         return date.getTime();
     }
 
+    public Date transTimeStamp2Date(long timeStamp) {
+        return new Date(timeStamp);
+    }
+
 }
